@@ -1,0 +1,16 @@
+<div class="card-body d-flex flex-column">
+    
+    <div class="d-flex">
+        <img src="../../assets/angular.png">
+        <h2> Socket.io Chat </h2>
+    </div>
+
+    <p> Seu nome </p>
+    <input class="form-control" type="text" placeholder="Usuário" (keyup)="getName($event.target.value)">
+    <p> O nome de sua sala </p>
+    <input class="form-control" type="text" placeholder="Sala" (keyup)="getRoom($event.target.value)">
+    <p> Escolha uma senha </p>
+    <input class="form-control" type="password" placeholder=" *********" (keyup)="getPassword($event)">
+    <button class="btn" (click)="getClick()"> Entrar </button>
+
+</div>

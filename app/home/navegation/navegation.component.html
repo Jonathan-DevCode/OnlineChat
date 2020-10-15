@@ -1,0 +1,23 @@
+
+<div id="chat-menu">
+    <p id="header"> Messenger </p>
+
+    <p> Your chat </p>
+
+    <a id="option" (click)="accessRoom($event)">
+        <p> {{ (name.room) ? name.room : "waiting" }} </p>
+        <p> <small> {{  (name) ? name.name : "waiting"  }} </small> </p>
+    </a> 
+
+    <p> Online chats </p>
+
+    <a 
+    *ngFor="let data of rooms$ | async; loading"  
+    id="option"
+    (click)="accessRoom($event)"
+    >
+            <p id="anulate"> {{ data.room }} </p>
+            <p id="anulate" > <small> {{ data.name }} </small> </p>
+    </a>
+
+</div>

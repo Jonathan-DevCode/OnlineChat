@@ -1,0 +1,11 @@
+<main class="card-body">
+    <header>
+        <img src="../../assets/angular.png">
+        <h2> Socket.io Chat </h2>
+    </header>
+    <p> Usuário </p>
+    <input class="form-control" type="text" placeholder="NomeDeExemplo" (keyup)="getName($event.target.value)">
+    <p> Senha </p>
+    <input class="form-control" type="password" placeholder="  **********" (keyup)="getPassword($event)">
+    <button class="btn" (click)="getClick()"> Entrar </button>
+</main>

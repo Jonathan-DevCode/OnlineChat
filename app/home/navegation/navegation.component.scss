@@ -1,0 +1,63 @@
+#chat-menu {
+    color: var(--patern);
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    position: fixed; 
+    bottom: 0;
+}
+
+#option {
+    display: flex;
+    background-color: var(--dark);
+    border-left: 2px solid var(--border);
+    overflow: hidden;
+}
+
+#header {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0.5rem;
+}
+
+p {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    pointer-events:none;
+}
+
+a p:last-of-type {
+    color: var(--success);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    #chat-menu {
+        left: 55vw;
+        height: 70vh;
+        width: 50vw;
+    }
+
+    @media only screen and (min-height: 600px) and (max-height: 700px) {
+        #chat-menu {
+            height: 100vh;
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #chat-menu {
+        left: 73vw;
+        height: 70vh;
+        width: 30vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 1600px) {
+    #chat-menu {
+        left: 85vw;
+        height: 80vh;
+        width: 30vw;
+    }
+}

@@ -1,0 +1,65 @@
+
+<main id="angular">
+
+    <img src="../../assets/login.jpg">
+    
+    <div id="sizing">
+        <div class="card">
+            
+            <div *ngIf="!option">
+                <app-login></app-login>
+            </div>
+            
+            <div *ngIf="option">
+                <app-register></app-register>
+            </div>
+
+            <a (click)="register()"> {{ (option) ? "Já tem uma conta?" : "Criar uma conta" }} </a>
+        
+        </div>
+    </div>
+
+    <div id="hover">
+        <h5> <b> Saber mais </b> </h5>
+        <i class="fa fa-angle-double-down" style="font-size: 30px;"></i>
+    </div>
+
+</main>
+    
+
+
+<footer>
+
+    <div id="creator">
+        <div>
+            <img id="me" src="../../assets/me.jpg">
+            <h4> Jonathan </h4>
+            <p> Desenvolvedor Web </p>
+        </div>
+    
+        <div id="midContent">
+            <h3> Site Responsivo </h3>
+            <div>
+                <button id="btnIcons"><i class="fa fa-twitter"></i></button>
+                <button id="btnIcons"><i class="fa fa-facebook"></i></button>
+                <button id="btnIcons"><i class="fa fa-linkedin"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="fixingMargin">
+        <div>
+            <p> Front-End </p>
+            <a href=""> Angular Doc </a> <br>
+            <a href=""> Bootstrap Doc </a>
+        </div>
+    
+        <div>
+            <p> Back-End (API) </p>
+            <a href=""> Socket IO Doc </a> <br>
+            <a href=""> Sequelize Doc </a> <br>
+            <a href=""> Express Doc </a>
+        </div>
+    </div>
+
+</footer>

@@ -1,0 +1,73 @@
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 100vh;
+    background-image: url('../../assets/something4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h5 {
+    color: var(--primary);
+}
+
+#summary {
+    background-color: rgba(248, 249, 250, 0.9);
+}
+
+@media only screen and (max-width: 767px) {
+    #background {
+        display: none;
+    }
+    
+    .card {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    
+    #summary {
+        width: 100%;
+    }
+
+    @media only screen and (min-height: 600px) and (max-height: 700px) {
+        #summary {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1600px) {
+    
+    #summary {
+        position: fixed;
+        top: 10vh;
+        left: 5vh;
+        width: 65vw;
+    }
+
+    @media only screen and (min-height: 585px) and (max-height: 727px) {
+        #summary {
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    
+    #summary {
+        position: fixed;
+        top: 30vh;
+        left: 10vh;
+        width: 40vw;
+    }
+
+}

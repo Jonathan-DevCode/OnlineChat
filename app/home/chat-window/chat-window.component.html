@@ -1,0 +1,16 @@
+
+<main>
+    <header>
+        <img src="../../../assets/chat.jpg" alt="Image">
+        <p> {{ room }} </p>
+        <button class="btn" (click)="getButton()"> Salas </button>
+    </header>
+
+    <section class="d-flex flex-column" id="message-board"></section>
+    
+    <footer id="message-input">
+        <input class="form-control" placeholder="Type a message" (keyup)="getMessage($event)" #inp>
+        <button type="submit" class="btn btn-primary" (click)="sendMessage()"> send </button>
+    </footer>
+
+</main>
